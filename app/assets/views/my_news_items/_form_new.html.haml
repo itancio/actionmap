@@ -1,0 +1,17 @@
+= form_tag search_news_items_path, method: :get do
+    .form-group.row
+        .col-md-4
+            %label.col-form-label
+                Representative:
+        .col-md-6
+            = select_tag(:representative_id, options_for_select(representatives_list, selected: representative.id),
+            class: 'form-control', id: 'Representative')
+    .form-group.row
+        .col-md-4
+            %label.col-form-label
+                Issue:
+        .col-md-6
+            = select_tag(:issue, options_for_select(issues_list), class: 'form-control', id: 'Issue')
+    .actions
+        %h3.text-center
+            = submit_tag 'Search', class: 'btn btn-primary'

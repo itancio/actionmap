@@ -1,0 +1,43 @@
+.row.mt-2
+    .col-12.col-md-6.offset-md-3.col-xl-4.offset-xl-4
+        %h1.text-center News article search results
+        .card-body.offset-xl-1
+            %dl.row
+                %h5
+                    = link_to @representative.name, representative_path(@representative, local: 1)
+            %dl.row
+                %h6
+                    %strong
+                        Issue:
+                    = @issue
+            = form_tag search_submit_news_path(@representative), method: :get do
+                .form-group.row
+                    %strong
+                        %label Select an article:
+                    - @top_5_news_items.each_with_index do |news_item, index|
+                        .row
+                            .col-sm-1
+                                %label
+                                    %input{ id: index, name: 'selected_news_article',
+                                    type: 'radio', value: news_item.id }
+                            .col-sm-11
+                                .title
+                                    = link_to news_item.title, news_item.link
+                                .description.mt-2.mb-4
+                                    = news_item.description
+                .form-group.row
+                    .col-md-4
+                        %label.col-form-label
+                            Rating:
+                    .col-md-6
+                        = select_tag(:rating, options_for_select(@ratings_list),
+                        class: 'form-control', id: 'Rating')
+                .actions
+                    %h3.text-center
+                        = submit_tag 'Save', class: 'btn btn-primary'
+    .col-12.col-md-6.offset-md-3.col-xl-4.offset-xl-4
+        .clearfix.mt-3
+            .float-right
+                = link_to representative_news_items_path(@representative), class: 'btn btn-info' do
+                    View news articles
+                    %i.fas.fa-arrow-right

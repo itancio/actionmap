@@ -1,0 +1,47 @@
+.row.mt-2
+    .col-12.col-md-6.offset-md-3.col-xl-4.offset-xl-4
+        .card-body.offset-xl-3
+            %dl.row
+                %img{ src: @representative.photo_url, width: '200' }
+            %dl.row
+                %h3.text-center
+                    = @representative.name
+        .card-body
+            .card-text
+                %dl.row
+                    %dt.col-sm-3.text-md-right
+                        Title:
+                    %dt.col-sm-9
+                        = @representative.title
+                %dl.row
+                    %dt.col-sm-3.text-md-right
+                        Political party:
+                    %dt.col-sm-9
+                        = @representative.political_party
+                %dl.row
+                    %dt.col-sm-3.text-md-right
+                        Street:
+                    %dt.col-sm-9
+                        = @representative.street
+                %dl.row
+                    %dt.col-sm-3.text-md-right
+                        City:
+                    %dt.col-sm-9
+                        = @representative.city
+                %dl.row
+                    %dt.col-sm-3.text-md-right
+                        State:
+                    %dt.col-sm-9
+                        = @representative.state
+                %dl.row
+                    %dt.col-sm-3.text-md-right
+                        Zip:
+                    %dt.col-sm-9
+                        = @representative.zip
+    .col-12.col-md-6.offset-md-3.col-xl-4.offset-xl-4
+        .clearfix
+            .float-left
+                = link_to (@local ? :back : representatives_path), class: 'mx-1 btn btn-info' do
+                    %i.fas.fa-arrow-left
+                    Back
+
