@@ -7,7 +7,11 @@ ActionMap seeks to bridge the gap between voters and the progressive community, 
 Features:
 
 - Enhanced Navigation: With our newly added top menu, users can now seamlessly navigate between our homepage, events, and a dedicated page for representatives.
+  
 ![image](assets/actionmap-login.jpg)
+
+<img src="assets/actionmap-login.jpg/ width="80%">
+
 - Google OAuth Integration: We've incorporated Google OAuth, ensuring a secure login experience. Once logged in, users will always be informed of their sign-in status.
 - Find Your Representative: On our representatives' page, input your location and voila! Discover your representatives, sourced from the Google Civic API. Furthermore, each representative is accompanied by links to their bio and related news.
 - Users can contribute by adding news articles relevant to an official, rating them based on the content. This fosters credibility and authenticity in the scoring process. Not just this, visualizing your political environment becomes easier as you can explore candidates through our map feature or even search using your address.
