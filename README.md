@@ -10,7 +10,7 @@ Features:
   
 ![image](assets/actionmap-login.jpg)
 
-<img src="assets/actionmap-login.jpg/ width="80%">
+<img src="assets/actionmap-login.jpg/" width="80%">
 
 - Google OAuth Integration: We've incorporated Google OAuth, ensuring a secure login experience. Once logged in, users will always be informed of their sign-in status.
 - Find Your Representative: On our representatives' page, input your location and voila! Discover your representatives, sourced from the Google Civic API. Furthermore, each representative is accompanied by links to their bio and related news.
