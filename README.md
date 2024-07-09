@@ -2,7 +2,7 @@
 
 [demo video](https://www.youtube.com/watch?v=K8rLec6Satc)
 
-ActionMap seeks to bridge the gap between voters and the progressive community, leveraging technology to amplify the voices of the electorate.
+ActionMap seeks to bridge the gap between voters and the progressive community, leveraging technology to amplify the voices of the electorate. It is an app that allows users to learn more about their representatives, and political events in their area as well as aggregate, share, and view news items in their locality.
 
 Features:
 
